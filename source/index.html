@@ -27,7 +27,7 @@
       <ul class="main-nav__list user-list">
         <li class="user-list__item">
           <form class="user-list__search-form" action="https://echo.htmlacademy.ru" method="post">
-            <label for="search" class="visually-hidden"></label>
+            <label for="search" class="visually-hidden">Поиск по сайту</label>
             <input class="user-list__search-input" type="search" name="search" id="search" placeholder="Поиск по сайту">
           </form>
         </li>
@@ -122,7 +122,8 @@
         </tr>
       </table>
       <p class="contacts__map">
-        <img class="contacts__image" src="img/map.jpg" width="320" height="457" alt="Наш магазин находится по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+        <img class="contacts__image" src="img/map.jpg" width="320" height="457"
+          alt="Наш магазин находится по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
       </p>
       <a class="contacts__write button" href="#">Напишите нам</a>
     </section>
@@ -132,7 +133,8 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+              Инстаграме</a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
@@ -150,10 +152,20 @@
   </footer>
 
   <section class="modal modal-cart-adding">
-    <h2 class="modal-cart-addingt__title">Добавить в корзину</h2>
-    <form class="modal-cart-adding__form">
-
-    </form>
+    <h2 class="modal-cart-adding__title">Добавить в корзину</h2>
+    <b class="modal-cart-adding__intro">Выберите размер:</b>
+    <ul class="modal-cart-adding__list">
+      <li class="modal-cart-adding__item">
+        <button class="modal-cart-adding__size" type="button">S</button>
+      </li>
+      <li class="modal-cart-adding__item">
+        <button class="modal-cart-adding__size" type="button">M</button>
+      </li>
+      <li class="modal-cart-adding__item">
+        <button class="modal-cart-adding__size" type="button">L</button>
+      </li>
+    </ul>
+    <button class="modal-cart-adding__button" type="button">Добавить</button>
   </section>
 </body>
 

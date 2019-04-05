@@ -8,8 +8,8 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-page" src="img/logotype-mobile.svg" wight="86" height="35"
+    <a class="page-header__logo logo" href="index.html">
+      <img class="logo__image" src="img/logotype-mobile.svg" wight="86" height="35"
         alt="Магазин предметов ручной работы «Мишка»">
     </a>
   </header>
@@ -38,8 +38,100 @@
     </div>
   </nav>
   <main class="page-main form-page-main">
-    <h1 class="form-page-main__title">Вязание на заказ</h1>
-
+    <h1 class="main-title">Вязание на заказ</h1>
+    <section class="order">
+      <p class="order__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
+        свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="order__form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="order__section">
+          <legend class="order__legend">Тип</legend>
+          <ul class="order__list">
+            <li class="order__option">
+              <input class="visually-hidden order__input order__input--radio" type="radio" name="goods-type"
+                value="interior-accessory" id="interior-accessory" checked>
+              <label for="interior-accessory">Аксессуар для
+                интерьера</label>
+            </li>
+            <li class="order__option">
+              <input class="visually-hidden order__input order__input--radio" type="radio" name="goods-type"
+                value="children-toy" id="children-toy">
+              <label for="children-toy">Детская игрушка</label>
+          </ul>
+        </fieldset>
+        <fieldset class="order__section">
+          <legend class="order__legend">Цвет</legend>
+          <ul class="order__list">
+            <li class="order__option">
+              <input class="visually-hidden order__input order__input--checkbox" type="checkbox" name="white" id="white"
+                checked>
+              <label for="white">Белый</label>
+            </li>
+            <li class="order__option">
+              <input class="visually-hidden order__input order__input--checkbox" type="checkbox" name="gray" id="gray"
+                checked>
+              <label for="gray">Серый</label>
+            </li>
+            <li class="order__option">
+              <input class="visually-hidden order__input order__input--checkbox" type="checkbox" name="tiffany"
+                id="tiffany">
+              <label for="tiffany">«Тиффани»</label>
+            </li>
+            <li class="order__option">
+              <input class="visually-hidden order__input order__input--checkbox" type="checkbox" name="black"
+                id="black">
+              <label for="black">Черный</label>
+            </li>
+            <li class="order__option">
+              <input class="visually-hidden order__input order__input--checkbox" type="checkbox" name="pink" id="pink">
+              <label for="pink">Розовый</label>
+            </li>
+            <li class="order__option">
+              <input class="visually-hidden order__input order__input--checkbox" type="checkbox" name="orange"
+                id="orange">
+              <label for="orange">Оранжевый</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="order__section">
+          <legend class="order__legend">ФИО</legend>
+          <p class="order__field">
+            <label class="order__sign" for="user-firstname">Имя:</label>
+            <input class="order__text-input" id="user-firstname" type="text" name="firstname"
+              placeholder="Введите ваше имя*" required>
+          </p>
+          <p class="order__field">
+            <label class="order__sign" for="user-lastname">Фамилия:</label>
+            <input class="order__text-input" id="user-lastname" type="text" name="lastname"
+              placeholder="Укажите фамилию*" required>
+          </p>
+          <p class="order__field">
+            <label class="order__sign" for="user-patronymic">Отчество:</label>
+            <input class="order__text-input" id="user-patronymic" type="text" name="patronymic"
+              placeholder="Отчество, если желаете">
+          </p>
+        </fieldset>
+        <fieldset class="order__section">
+          <legend class="order__legend">Тел</legend>
+          <label class="visually-hidden" for="user-phone">Телефон:</label>
+          <input class="order__text-input order__text-input--phone" id="user-phone" type="tel" name="phone"
+            placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+        </fieldset>
+        <fieldset class="order__section">
+          <legend class="order__legend">E-mail</legend>
+          <label class="visually-hidden" for="user-email">E-mail:</label>
+          <input class="order__text-input order__text-input--email" id="user-email" type="text" name="email"
+            placeholder="Ваш Email*" required>
+        </fieldset>
+        <fieldset class="order__section">
+          <legend class="order__legend">Доп</legend>
+          <label class="visually-hidden" for="user-extra-text">Дополнительные пожелания:</label>
+          <textarea class="order__textarea" id="user-extra-text" name="extra-text" placeholder="Опишите все ваши
+          пожелания к заказу"></textarea>
+        </fieldset>
+        <small class="order__explanation">*Поля обязательны для заполнения</small>
+        <button class="order__button button" type="submit">Отправить заказ</button>
+      </form>
+    </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
