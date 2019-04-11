@@ -4,7 +4,17 @@
   list-style: none;
 }
 
+.font-bold() {
+  font-family: @font-bold;
+  font-weight: 700;
+}
+
 .font(@size, @line) {
   font-size: @size;
   line-height: @line;
+}
+
+.title() {
+  .font(25px, 30px);
+  .font-bold();
 }
