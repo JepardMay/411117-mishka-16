@@ -1,0 +1,42 @@
+.catalog__list {
+  .list-style();
+}
+
+.catalog__item {
+  border: solid 1px #ececec;
+}
+
+.catalog__product-name {
+  .font-bold();
+  .font(17px, 24px);
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:focus {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.catalog__product-info {
+  .font(13px, 30px);
+  color: @main-text-color;
+}
+
+.catalog__product-price {
+  .font-bold();
+  .font(15px, 24px);
+}
+
+.catalog__product-cart {
+  color: rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    color: #63d1bb;
+  }
+
+  &:focus {
+    color: rgba(99, 209, 187, 0.3);
+  }
+}
