@@ -1,1 +1,137 @@
-// Здесь будет что-то
+.form__section {
+  border: none;
+}
+
+.form__legend {
+  .font-bold();
+  .font(17px, 16px);
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+
+.form__list {
+  .list-style();
+}
+
+.form__option {
+  .font-bold();
+  .font(17px, 18px);
+  margin-bottom: 22px;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  padding-left: 62px;
+}
+
+.form__label {
+  position: relative;
+
+  cursor: pointer;
+}
+
+.form__input {
+  outline: none;
+}
+
+.form__input--radio + .form__label::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -65px;
+
+  width: 40px;
+  height: 40px;
+
+  border: solid 2px @main-text-color;
+  border-radius: 50%;
+}
+
+.form__input--radio:checked + .form__label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -53px;
+
+  width: 16px;
+  height: 16px;
+
+  background-color: #62d1ba;
+  border-radius: 50%;
+}
+
+.form__input--checkbox + .form__label::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -65px;
+
+  width: 40px;
+  height: 39px;
+
+  border: solid 2px @main-text-color;
+}
+
+.form__input--checkbox:checked + .form__label::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -65px;
+
+  width: 22px;
+  height: 16px;
+
+  background-image: url("../../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.form__input:hover + .form__label::before {
+  border-color: #62d1ba;
+}
+
+.form__input:focus + .form__label::before {
+  border-color: rgba(68, 68, 68, 0.3);
+}
+
+.form__sign {
+  .font-bold();
+  .font(17px, 18px);
+}
+
+.form__text-input {
+  height: 52px;
+  .font(17px, 18px);
+  color: @main-text-color;
+  border: none;
+  box-shadow: inset 0 -2px 0 0 #000000;
+  outline: none;
+}
+
+.form__text-input:hover,
+.form__text-input:active {
+  box-shadow: inset 0 -2px 0 0 #62d1ba;
+}
+
+.form__text-input::placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__textarea {
+  .font(17px, 18px);
+  color: @main-text-color;
+  border: solid 2px @main-text-color;
+  outline: none;
+}
+
+.form__textarea:hover,
+.form__textarea:active {
+  border-color: #62d1ba;
+}
+
+.form__textarea::placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__explanation {
+  .font(14px, 16px);
+  color: @main-text-color;
+}
