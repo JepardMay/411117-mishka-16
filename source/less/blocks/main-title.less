@@ -1,6 +1,39 @@
 .main-title {
+  display: block;
+  margin: 0 auto;
+  margin-top: -17px;
+  padding-top: 93px;
+  padding-right: 39px;
+  padding-bottom: 193px;
+  padding-left: 39px;
+  width: 320px;
+  text-align: center;
+
   .font(27px, 30px);
   .font-bold();
   color: #010000;
   background-color: #f1f1f1;
+}
+
+@media (min-width: @tablet-width) {
+  .main-title {
+    margin-top: -71px;
+    padding-top: 161px;
+    padding-right: 139px;
+    padding-bottom: 490px;
+    padding-left: 139px;
+    width: @tablet-width;
+    .title-tablet();
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-title {
+    margin-top: -47px;
+    padding-right: 268px;
+    padding-bottom: 473px;
+    padding-left: 268px;
+    width: @desktop-width;
+    .title-desktop();
+  }
 }

@@ -1,13 +1,24 @@
 .user-list {
   .list-style();
   .font(17px, 24px);
+  background-color: #ffffff;
 }
 
 .user-list__item {
+  box-shadow: 0 1px 0 0 #ececec,
+    inset 0 1px 0 0 #ececec;
+
   .font-bold();
 }
 
 .user-list__link {
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 30px;
+  padding-left: 76px;
+  padding-right: 52px;
+
   color: #000000;
 
   &:hover {
@@ -17,4 +28,20 @@
   &:focus {
     color: rgba(0, 0, 0, 0.3);
   }
+}
+
+@media (min-width: @tablet-width) {
+  .user-list {
+    order: 1;
+    margin-left: auto;
+  }
+
+  .user-list__item {
+    box-shadow: 1px 1px 0 0 #ececec,
+      inset 1px 1px 0 0 #ececec;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  //
 }
