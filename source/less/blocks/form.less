@@ -1,25 +1,63 @@
 .form__section {
+  margin: 0;
+  margin-bottom: 34px;
+  padding: 0;
   border: none;
+
+  &:last-of-type {
+    margin-bottom: 18px;
+  }
 }
 
 .form__legend {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   .font-bold();
   .font(17px, 16px);
   color: #63d1bb;
   text-transform: uppercase;
 }
 
+.form__legend::after {
+  content: "";
+  width: 198px;
+  height: 1px;
+  background-color: #63d1bb;
+}
+
 .form__list {
+  margin-bottom: 33px;
   .list-style();
 }
 
+.form__list--type {
+  margin-top: 38px;
+}
+
+.form__list--color {
+  margin-top: 35px;
+}
+
 .form__option {
+  margin-bottom: 34px;
+  padding-top: 12px;
+  padding-left: 64px;
   .font-bold();
   .font(17px, 18px);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__option--type {
   margin-bottom: 22px;
-  padding-top: 18px;
-  padding-bottom: 20px;
-  padding-left: 62px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .form__label {
@@ -73,15 +111,15 @@
 .form__input--checkbox:checked + .form__label::after {
   content: "";
   position: absolute;
-  top: -10px;
-  left: -65px;
+  top: -4px;
+  left: -55px;
 
   width: 22px;
-  height: 16px;
+  height: 22px;
 
   background-image: url("../../img/icon-tick.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center center;
 }
 
 .form__input:hover + .form__label::before {
@@ -92,13 +130,30 @@
   border-color: rgba(68, 68, 68, 0.3);
 }
 
+.form__field {
+  margin: 0;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+
+  &:first-of-type {
+    margin-top: 33px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
 .form__sign {
   .font-bold();
   .font(17px, 18px);
 }
 
 .form__text-input {
+  width: 100%;
   height: 52px;
+  padding-right: 40px;
   .font(17px, 18px);
   color: @main-text-color;
   border: none;
@@ -116,10 +171,15 @@
 }
 
 .form__textarea {
+  margin-top: 23px;
+  padding: 18px;
+  width: 100%;
+  height: 142px;
   .font(17px, 18px);
   color: @main-text-color;
   border: solid 2px @main-text-color;
   outline: none;
+  resize: vertical;
 }
 
 .form__textarea:hover,
@@ -132,6 +192,27 @@
 }
 
 .form__explanation {
+  display: block;
+  margin-bottom: 31px;
   .font(14px, 16px);
   color: @main-text-color;
+}
+
+.form__button {
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .form__section {
+    display: flex;
+  }
+
+  .form__legend {
+    width: 111px;
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
 }

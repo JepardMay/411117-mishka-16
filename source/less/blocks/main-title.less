@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding-top: 76px;
   padding-right: 39px;
-  padding-bottom: 120px;
+  padding-bottom: 80px;
   padding-left: 39px;
   width: 320px;
   text-align: center;
@@ -14,15 +14,24 @@
   background-color: #f1f1f1;
 }
 
+.main-title--index {
+  padding-bottom: 120px;
+}
+
 @media (min-width: @tablet-width) {
   .main-title {
     margin-top: -71px;
-    padding-top: 161px;
+    padding-top: 106px;
     padding-right: 139px;
-    padding-bottom: 490px;
+    padding-bottom: 76px;
     padding-left: 139px;
     width: @tablet-width;
     .title-tablet();
+  }
+
+  .main-title--index {
+    padding-top: 161px;
+    padding-bottom: 490px;
   }
 }
 
@@ -30,9 +39,13 @@
   .main-title {
     margin-top: -47px;
     padding-right: 268px;
-    padding-bottom: 473px;
+    padding-bottom: 99px;
     padding-left: 268px;
     width: @desktop-width;
     .title-desktop();
+  }
+
+  .main-title--index {
+    padding-bottom: 473px;
   }
 }
