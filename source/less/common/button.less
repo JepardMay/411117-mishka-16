@@ -1,19 +1,29 @@
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 52px;
+
   .font-bold();
   .font(17px, 20px);
   text-transform: uppercase;
   color: @main-text-color;
+  text-align: center;
+  vertical-align: middle;
+
   background-color: #ffffff;
   border: solid 2px @main-text-color;
 
   &:hover {
     color: #ffffff;
     background-color: @main-text-color;
+    transition-duration: 0.5s;
   }
 
   &:focus {
     color: rgba(255, 255, 255, 0.3);
     background-color: @main-text-color;
+    outline: none;
   }
 
   cursor: pointer;

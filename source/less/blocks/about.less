@@ -1,4 +1,12 @@
+.about {
+  width: 320px;
+  margin: 0 auto;
+  padding: 35px 30px;
+}
+
 .about__title {
+  margin: 0;
+  margin-bottom: 30px;
   .title();
 }
 
@@ -6,4 +14,58 @@
   .list-style();
   .font(17px, 20px);
   .font-bold();
+}
+
+.about__item {
+  margin-bottom: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .about {
+    width: @tablet-width;
+    padding: 60px 51px;
+  }
+
+  .about__title {
+    margin-bottom: 47px;
+    .title-tablet();
+  }
+
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .about__item {
+    margin-bottom: 57px;
+    width: 295px;
+  }
+
+  .about__item--flower {
+    order: -2;
+  }
+
+  .about__item--money {
+    order: -1;
+  }
+
+  .about__item--clew {
+    order: -2;
+  }
+
+  .about__item--rocket {
+    order: -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about {
+    width: @desktop-width;
+    padding: 70px 225px;
+  }
+
+  .about__title {
+    .title-desktop();
+  }
 }
