@@ -51,19 +51,20 @@
   <main class="page-main form-page-main">
     <h1 class="main-title">Вязание на заказ</h1>
     <section class="order">
+      <h2 class="visually-hidden">Форма для заказа</h2>
       <p class="order__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
         свяжемся с вами, чтобы уточнить детали.</p>
       <form class="order__form form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__section">
           <legend class="form__legend">Тип</legend>
-          <ul class="form__list">
-            <li class="form__option">
+          <ul class="form__list form__list--type">
+            <li class="form__option form__option--type">
               <input class="visually-hidden form__input form__input--radio" type="radio" name="goods-type"
                 value="interior-accessory" id="interior-accessory" checked>
               <label class="form__label" for="interior-accessory">Аксессуар для
                 интерьера</label>
             </li>
-            <li class="form__option">
+            <li class="form__option form__option--type">
               <input class="visually-hidden form__input form__input--radio" type="radio" name="goods-type"
                 value="children-toy" id="children-toy">
               <label class="form__label" for="children-toy">Детская игрушка</label>
@@ -71,7 +72,7 @@
         </fieldset>
         <fieldset class="form__section">
           <legend class="form__legend">Цвет</legend>
-          <ul class="form__list">
+          <ul class="form__list form__list--color">
             <li class="form__option">
               <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="white" id="white"
                 checked>
@@ -135,8 +136,7 @@
         <fieldset class="form__section">
           <legend class="form__legend">Доп</legend>
           <label class="visually-hidden" for="user-extra-text">Дополнительные пожелания:</label>
-          <textarea class="form__textarea" id="user-extra-text" name="extra-text" placeholder="Опишите все ваши
-          пожелания к заказу"></textarea>
+          <textarea class="form__textarea" id="user-extra-text" name="extra-text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
         <small class="form__explanation">*Поля обязательны для заполнения</small>
         <button class="form__button button" type="submit">Отправить заказ</button>
