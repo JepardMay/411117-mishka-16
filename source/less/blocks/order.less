@@ -1,4 +1,46 @@
+.order {
+  margin: 0 auto;
+}
+
 .order__intro {
+  margin: 30px;
   .font(13px, 24px);
   color: @main-text-color;
+}
+
+.order__form {
+  margin: 0 30px;
+  margin-bottom: 55px;
+}
+
+@media (min-width: @tablet-width) {
+  .order {
+    width: @tablet-width;
+  }
+
+  .order__intro {
+    margin-top: 80px;
+    margin-right: 105px;
+    margin-bottom: 61px;
+    margin-left: 51px;
+    .font(17px, 30px);
+  }
+
+  .order__form {
+    margin: 0;
+    margin-bottom: 50px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .order {
+    width: @desktop-width;
+  }
+
+  .order__intro {
+    margin-top: 129px;
+    margin-right: 253px;
+    margin-left: 225px;
+  }
 }
