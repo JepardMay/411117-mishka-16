@@ -1,17 +1,37 @@
+.social {
+  display: flex;
+  justify-content: center;
+}
+
 .social__list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   .list-style();
 }
 
+.social__item {
+  margin-left: 40px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
 .social__link {
-  color: #000000;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.social__link path {
+  fill: #000000;
 
   &:hover {
-    color: #46c1ae;
+    fill: #46c1ae;
   }
 
   &:active {
-    color: rgba(70, 193, 174, 0.3);
+    fill: rgba(70, 193, 174, 0.3);
   }
 }

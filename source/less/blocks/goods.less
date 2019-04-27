@@ -12,27 +12,28 @@
 }
 
 .goods__link {
+  position: relative;
   display: block;
-  height: 103px;
-
-  padding-top: 30px;
+  padding: 30px 0;
   padding-right: 185px;
-  padding-bottom: 30px;
   padding-left: 29px;
+  min-height: 103px;
 
   color: #ffffff;
   background-color: #63d1bb;
 
-  &:hover {
-    height: 108px;
-    padding-bottom: 35px;
+  @media (max-width: @tablet-width) {
+    &:hover {
+      min-height: 108px;
+      padding-bottom: 35px;
 
-    background-color: #59d5bc;
-  }
+      background-color: #59d5bc;
+    }
 
-  &:focus {
-    background-color: #59d5bc;
-    color: rgba(255, 255, 255, 0.3);
+    &:focus {
+      background-color: #59d5bc;
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 }
 
@@ -48,28 +49,74 @@
   }
 }
 
+.goods__link svg {
+  position: absolute;
+}
+
+.goods__link--interior svg {
+  width: 40px;
+  height: 62px;
+  top: 23px;
+  right: 36px;
+}
+
+.goods__link--toys svg {
+  width: 60px;
+  height: 60px;
+  top: 21px;
+  right: 27px;
+}
+
+.goods__link path {
+  fill: #149080;
+  fill-opacity: 0.5;
+}
+
+.goods__link:hover path {
+  fill-opacity: 0.7;
+}
+
+.goods__link:focus path {
+  fill: #149080;
+  fill-opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .goods {
-    margin-top: -119px;
-    width: @tablet-width;
+    margin-top: -129px;
   }
 
   .goods__list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
     .font(20px, 30px);
   }
 
   .goods__link {
-    height: 119px;
+    flex: auto;
+    width: 334px;
+    min-height: 124px;
 
     padding-top: 35px;
     padding-bottom: 34px;
     padding-left: 36px;
+    transition: all 0.3s;
+    transform: translateY(5px);
 
     &:hover {
-      height: 124px;
-      padding-bottom: 39px;
+      transform: translateY(0);
     }
+  }
+
+  .goods__link--interior svg {
+    top: 30px;
+  }
+
+  .goods__link--toys svg {
+    top: 31px;
+    right: 34px;
   }
 }
 
@@ -82,5 +129,10 @@
   .goods__link {
     width: 525px;
     padding-right: 395px;
+  }
+
+  .goods__link--toys svg {
+    top: 32px;
+    right: 35px;
   }
 }

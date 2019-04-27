@@ -1,16 +1,23 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .copyright__text {
+  margin-right: 30px;
   .font-bold();
   .font(19px, 18px);
 }
 
-.copyright__link {
-  color: #63d1bb;
+.copyright__link path {
+  fill: #63d1bb;
 
   &:hover {
-    color: #46c1ae;
+    fill: #46c1ae;
   }
 
   &:active {
-    color: rgba(70, 193, 174, 0.3);
+    fill: rgba(70, 193, 174, 0.3);
   }
 }

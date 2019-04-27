@@ -20,13 +20,17 @@
   .font(15px, 30px);
   color: @main-text-color;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
   margin-bottom: 42px;
 }
 
 .contacts__content {
   margin: 0;
+
+  &:first-child {
+    margin-right: 12%;
+  }
 }
 
 .contacts__content--address {
@@ -53,6 +57,19 @@
     padding: 61px 51px;
     display: flex;
     flex-direction: column;
+    position: relative;
+  }
+
+  .contacts::after {
+    content: "";
+    position: absolute;
+    top: 47px;
+    right: 55px;
+    width: 47px;
+    height: 81px;
+    background-image: url("../../img/icon-flag.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 
   .contacts__title {
@@ -93,7 +110,12 @@
     position: relative;
     width: 1052px;
     padding: 71px 64px;
-    padding-left: 224px;
+    padding-left: 175px;
+  }
+
+  .contacts::after {
+    top: 62px;
+    left: 64px;
   }
 
   .contacts__title {

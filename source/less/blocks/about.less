@@ -1,11 +1,12 @@
 .about {
   margin: 0 auto;
   padding: 35px 30px;
+  padding-bottom: 61px;
 }
 
 .about__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 88px;
   .title();
 }
 
@@ -16,17 +17,61 @@
 }
 
 .about__item {
-  margin-bottom: 30px;
+  position: relative;
+  margin-bottom: 85px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.about__item svg {
+  position: absolute;
+}
+
+.about__item path {
+  fill: #63d1bb;
+}
+
+.about__item--flower svg {
+  top: -57px;
+  left: 9px;
+}
+
+.about__item--money svg {
+  top: -55px;
+  left: 0;
+}
+
+.about__item--like svg {
+  top: -50px;
+  left: 8px;
+}
+
+.about__item--clew svg {
+  top: -54px;
+  left: 3px;
+}
+
+.about__item--rocket svg {
+  top: -53px;
+  left: -7px;
+}
+
+.about__item--gift svg {
+  top: -55px;
+  left: 2px;
 }
 
 @media (min-width: @tablet-width) {
   .about {
     width: @tablet-width;
     padding: 60px 51px;
+    padding-bottom: 82px;
   }
 
   .about__title {
-    margin-bottom: 47px;
+    margin-bottom: 0;
     .title-tablet();
   }
 
@@ -37,8 +82,14 @@
   }
 
   .about__item {
-    margin-bottom: 57px;
+    margin-top: 112px;
+    margin-bottom: 0;
     width: 295px;
+
+    &:nth-child(1),
+    &:nth-child(4) {
+      margin-top: 104px;
+    }
   }
 
   .about__item--flower {
