@@ -17,6 +17,18 @@
     justify-content: space-between;
     position: relative;
     width: @tablet-width;
+    box-shadow: inset 0 -1px 0 0 #ececec,
+      inset 1px 0 0 0 #ececec;
+  }
+
+  .page-header::after {
+    content: "";
+    position: absolute;
+    top: 94px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    box-shadow: inset 0 1px 0 0 #ececec;
   }
 
   .page-header__logo {
@@ -31,6 +43,11 @@
 @media (min-width: @desktop-width) {
   .page-header {
     width: @desktop-width;
+    box-shadow: inset 0 -1px 0 0 #ececec;
+  }
+
+  .page-header::after {
+    top: 94px;
   }
 
   .page-header__logo {
