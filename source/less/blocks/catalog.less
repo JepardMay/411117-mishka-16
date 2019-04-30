@@ -11,7 +11,7 @@
 
 .catalog__item {
   width: 260px;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   border: solid 1px #ececec;
 
   &:hover .catalog__product-wrapper {
@@ -28,16 +28,18 @@
 }
 
 .catalog__product-wrapper {
-  padding: 30px 28px;
+  margin-top: -9px;
+  padding: 26px 27px;
+  padding-bottom: 23px;
 }
 
 .catalog__product-sign {
-  margin-bottom: 49px;
+  margin-bottom: 40px;
 }
 
 .catalog__product-name {
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 5px;
 
   .font-bold();
   .font(17px, 24px);
@@ -62,6 +64,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .catalog__product-buying::before {
@@ -98,18 +101,19 @@
   }
 
   .catalog__list {
-    padding: 52px;
+    padding: 79px 50px;
     padding-bottom: 0;
   }
 
   .catalog__item {
     width: 100%;
-    margin-bottom: 54px;
+    margin-bottom: 52px;
     display: flex;
     justify-content: space-between;
   }
 
   .catalog__product-image {
+    display: block;
     width: 334px;
   }
 
@@ -118,6 +122,9 @@
     flex-direction: column;
     justify-content: space-between;
     width: 335px;
+    margin-top: 0;
+    padding: 26px 27px;
+    padding-bottom: 22px;
   }
 
   .catalog__product-sign {
@@ -125,12 +132,16 @@
   }
 
   .catalog__product-name {
-    margin-bottom: 15px;
+    margin-bottom: 3px;
     .font(20px, 24px);
   }
 
   .catalog__product-info {
     .font(15px, 30px);
+  }
+
+  .catalog__product-price {
+    .font(17px, 24px);
   }
 }
 
@@ -143,14 +154,14 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0 50px;
-    padding-top: 128px;
+    padding-top: 132px;
   }
 
   .catalog__item {
     width: 316px;
     margin: 0;
-    margin-right: 48px;
-    margin-bottom: 57px;
+    margin-right: 50px;
+    margin-bottom: 54px;
     flex-direction: column;
 
     &:nth-child(3n) {
@@ -165,9 +176,14 @@
   .catalog__product-wrapper {
     width: 316px;
     min-height: 197px;
+    padding-bottom: 23px;
   }
 
   .catalog__product-sign {
-    margin-bottom: 43px;
+    margin-bottom: 38px;
+  }
+
+  .catalog__product-buying {
+    margin-right: 5px;
   }
 }

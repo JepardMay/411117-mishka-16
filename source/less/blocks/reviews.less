@@ -20,7 +20,7 @@
 
 .reviews__title {
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 24px;
   .title();
 }
 
@@ -30,18 +30,19 @@
 
 .reviews__item {
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 29px;
 }
 
 .reviews__text {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 27px;
 
   .font(15px, 30px);
   color: @main-text-color;
 }
 
 .reviews__author-name {
+  margin-bottom: 3px;
   .font(17px, 24px);
   .font-bold();
   font-style: normal;
@@ -101,12 +102,18 @@
     position: relative;
     width: @tablet-width;
     margin-bottom: 84px;
-    padding-top: 86px;
-    padding-right: 52px;
-    padding-bottom: 53px;
-    padding-left: 47px;
+    padding: 0 48px;
+    padding-top: 77px;
+    padding-bottom: 47px;
 
-    background-image: linear-gradient(to right, #f1f1f1 350px, transparent 350px);
+    background-image: url("../../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 350px auto;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/review@2x.jpg");
+    }
   }
 
   .reviews::after {
@@ -115,7 +122,7 @@
   }
 
   .reviews__title {
-    margin-bottom: 65px;
+    margin-bottom: 49px;
     .title-tablet();
   }
 
@@ -128,7 +135,7 @@
   }
 
   .reviews__text {
-    margin-bottom: 68px;
+    margin-bottom: 57px;
 
     .font(17px, 30px);
   }
@@ -140,8 +147,8 @@
   .reviews__switches {
     position: absolute;
     width: 175px;
-    bottom: 53px;
-    right: 52px;
+    bottom: 49px;
+    right: 50px;
     border: none;
   }
 
@@ -152,7 +159,7 @@
   .reviews__write {
     position: absolute;
     top: 79px;
-    right: 52px;
+    right: 50px;
 
     width: 175px;
   }
@@ -160,16 +167,16 @@
 
 @media (min-width: @desktop-width) {
   .reviews {
-    width: 1052px;
-    margin-bottom: 90px;
-    padding-top: 80px;
-    padding-right: 120px;
-    padding-bottom: 102px;
-    padding-left: 160px;
+    width: 1048px;
+    margin-bottom: 92px;
+    padding-top: 71px;
+    padding-right: 87px;
+    padding-bottom: 94px;
+    padding-left: 172px;
   }
 
   .reviews::after {
-    bottom: -90px;
+    bottom: -92px;
     height: 23px;
   }
 
@@ -178,6 +185,15 @@
   }
 
   .reviews__text {
-    margin-bottom: 49px;
+    margin-bottom: 38px;
+  }
+
+  .reviews__switches {
+    bottom: 96px;
+    right: 0;
+  }
+
+  .reviews__write {
+    right: 0;
   }
 }
