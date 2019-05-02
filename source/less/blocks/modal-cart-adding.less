@@ -1,5 +1,5 @@
 .modal-cart-adding {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   width: 320px;
@@ -89,6 +89,10 @@
   }
 
   cursor: pointer;
+}
+
+.modal-cart-adding--open {
+  display: flex;
 }
 
 @media (min-width: @tablet-width) {
