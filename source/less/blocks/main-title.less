@@ -1,32 +1,42 @@
 .main-title {
+  background-color: #f1f1f1;
+  box-shadow: 0 -1px 0 0 #ececec;
+}
+
+.main-title--index {
+  background-color: #f9f9f9;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center -18px;
+  background-size: 575px auto;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+  }
+}
+
+.main-title__title {
   display: block;
   margin: 0 auto;
-  padding-top: 76px;
-  padding-right: 39px;
-  padding-bottom: 80px;
-  padding-left: 39px;
+  padding-top: 71px;
+  padding-right: 35px;
+  padding-bottom: 76px;
+  padding-left: 35px;
   text-align: center;
 
   .font(27px, 30px);
   .font-bold();
   color: #010000;
-  background-color: #f1f1f1;
 }
 
-.main-title--index {
-  padding-bottom: 120px;
+.main-title__title--index {
+  padding-bottom: 122px;
 }
 
 @media (min-width: @tablet-width) {
   .main-title {
     position: relative;
-    margin-top: -71px;
-    padding-top: 106px;
-    padding-right: 139px;
-    padding-bottom: 76px;
-    padding-left: 139px;
-    width: @tablet-width;
-    .title-tablet();
+    margin-top: -61px;
   }
 
   .main-title::after {
@@ -37,26 +47,38 @@
     z-index: 1;
     width: 100%;
     height: 24px;
-    background-image: url("../../img/bg-zigzag-fill.svg");
+    background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     background-position: 0 0;
     background-size: contain;
   }
 
   .main-title--index {
-    padding-top: 161px;
-    padding-bottom: 490px;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-size: 1150px auto;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+    }
+  }
+
+  .main-title__title {
+    padding: 0 124px;
+    padding-top: 95px;
+    padding-bottom: 80px;
+    width: @tablet-width;
+    .title-tablet();
+  }
+
+  .main-title__title--index {
+    padding-top: 153px;
+    padding-bottom: 492px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-title {
-    margin-top: -48px;
-    padding-right: 268px;
-    padding-bottom: 99px;
-    padding-left: 268px;
-    width: @desktop-width;
-    .title-desktop();
+    margin-top: -52px;
   }
 
   .main-title::after {
@@ -66,6 +88,23 @@
 
 
   .main-title--index {
-    padding-bottom: 473px;
+    background-image: url("../img/hero-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
+  }
+
+  .main-title__title {
+    padding-right: 268px;
+    padding-bottom: 99px;
+    padding-left: 268px;
+    width: @desktop-width;
+    .title-desktop();
+  }
+
+  .main-title__title--index {
+    padding-top: 153px;
+    padding-bottom: 475px;
   }
 }

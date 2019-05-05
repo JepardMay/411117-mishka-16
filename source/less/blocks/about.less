@@ -1,12 +1,12 @@
 .about {
   margin: 0 auto;
-  padding: 35px 30px;
-  padding-bottom: 61px;
+  padding: 27px 29px;
+  padding-bottom: 20px;
 }
 
 .about__title {
   margin: 0;
-  margin-bottom: 88px;
+  margin-bottom: 86px;
   .title();
 }
 
@@ -18,7 +18,7 @@
 
 .about__item {
   position: relative;
-  margin-bottom: 85px;
+  margin-bottom: 83px;
 
   &:last-child {
     margin-bottom: 0;
@@ -34,40 +34,40 @@
 }
 
 .about__item--flower svg {
-  top: -57px;
-  left: 9px;
+  top: -54px;
+  left: 10px;
 }
 
 .about__item--money svg {
-  top: -55px;
-  left: 0;
+  top: -53px;
+  left: 2px;
 }
 
 .about__item--like svg {
-  top: -50px;
-  left: 8px;
+  top: -48px;
+  left: 9px;
 }
 
 .about__item--clew svg {
-  top: -54px;
-  left: 3px;
+  top: -51px;
+  left: 5px;
 }
 
 .about__item--rocket svg {
-  top: -53px;
-  left: -7px;
+  top: -50px;
+  left: -3px;
 }
 
 .about__item--gift svg {
-  top: -55px;
-  left: 2px;
+  top: -52px;
+  left: 5px;
 }
 
 @media (min-width: @tablet-width) {
   .about {
     width: @tablet-width;
-    padding: 60px 51px;
-    padding-bottom: 82px;
+    padding: 50px 48px;
+    padding-bottom: 84px;
   }
 
   .about__title {
@@ -79,16 +79,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    .font(20px, 22px);
   }
 
   .about__item {
-    margin-top: 112px;
+    margin-top: 111px;
     margin-bottom: 0;
-    width: 295px;
+    width: 335px;
 
     &:nth-child(1),
     &:nth-child(4) {
-      margin-top: 104px;
+      margin-top: 102px;
     }
   }
 
@@ -112,10 +113,15 @@
 @media (min-width: @desktop-width) {
   .about {
     width: @desktop-width;
-    padding: 70px 225px;
+    padding: 59px 223px;
+    padding-bottom: 90px;
   }
 
   .about__title {
     .title-desktop();
+  }
+
+  .about__item {
+    width: 352px;
   }
 }
