@@ -1,12 +1,7 @@
 .form__section {
   margin: 0;
-  margin-bottom: 34px;
   padding: 0;
   border: none;
-
-  &:last-of-type {
-    margin-bottom: 18px;
-  }
 }
 
 .form__legend {
@@ -24,7 +19,7 @@
 .form__legend::after {
   content: "";
   flex-grow: 1;
-  margin-left: 25px;
+  margin-left: 20px;
   width: 175px;
   height: 1px;
   background-color: #63d1bb;
@@ -36,30 +31,29 @@
 }
 
 .form__list--type {
-  margin-top: 38px;
-}
-
-.form__list--color {
   margin-top: 35px;
 }
 
+.form__list--color {
+  margin-top: 36px;
+}
+
 .form__option {
-  margin-bottom: 34px;
-  padding-top: 12px;
-  padding-left: 64px;
+  margin-bottom: 43px;
+  padding-left: 63px;
   .font-bold();
   .font(17px, 18px);
 
   &:last-child {
-    margin-bottom: 0;
+    margin-bottom: 42px;
   }
 }
 
 .form__option--type {
-  margin-bottom: 22px;
+  margin-bottom: 23px;
 
   &:last-child {
-    margin-bottom: 0;
+    margin-bottom: 44px;
   }
 }
 
@@ -76,8 +70,8 @@
 .form__input--radio + .form__label::before {
   content: "";
   position: absolute;
-  top: -10px;
-  left: -65px;
+  top: -7px;
+  left: -63px;
 
   width: 40px;
   height: 40px;
@@ -89,8 +83,8 @@
 .form__input--radio:checked + .form__label::after {
   content: "";
   position: absolute;
-  top: 2px;
-  left: -53px;
+  top: 5px;
+  left: -51px;
 
   width: 16px;
   height: 16px;
@@ -102,8 +96,8 @@
 .form__input--checkbox + .form__label::before {
   content: "";
   position: absolute;
-  top: -10px;
-  left: -65px;
+  top: -8px;
+  left: -63px;
 
   width: 40px;
   height: 39px;
@@ -114,8 +108,8 @@
 .form__input--checkbox:checked + .form__label::after {
   content: "";
   position: absolute;
-  top: -4px;
-  left: -55px;
+  top: -2px;
+  left: -54px;
 
   width: 22px;
   height: 22px;
@@ -136,17 +130,25 @@
 .form__field {
   position: relative;
   margin: 0;
-  margin-bottom: 24px;
   display: flex;
   flex-direction: column;
+}
+
+.form__field--name {
+  margin-bottom: 22px;
 
   &:first-of-type {
-    margin-top: 33px;
+    margin-top: 29px;
   }
 
   &:last-of-type {
-    margin-bottom: 0;
+    margin-bottom: 31px;
   }
+}
+
+.form__field--contacts {
+  margin-top: 7px;
+  margin-bottom: 32px;
 }
 
 .form__icon {
@@ -159,7 +161,7 @@
 }
 
 .form__icon--email {
-  top: 16px;
+  top: 11px;
   right: 4px;
 }
 
@@ -200,8 +202,9 @@
 }
 
 .form__textarea {
-  margin-top: 23px;
-  padding: 18px;
+  margin-top: 25px;
+  margin-bottom: 16px;
+  padding: 14px;
   width: 100%;
   height: 142px;
   .font(17px, 18px);
@@ -243,15 +246,7 @@
   .form__section {
     width: 100%;
     margin-bottom: 0;
-    padding: 50px;
-  }
-
-  .form__section--phone {
-    padding-bottom: 24px;
-  }
-
-  .form__section--email {
-    padding-top: 0;
+    padding: 0 50px;
   }
 
   .form__section--background {
@@ -266,47 +261,51 @@
 
   .form__legend {
     width: 100px;
-    margin-top: 19px;
+    margin-top: 65px;
     display: block;
   }
 
+  .form__legend--email {
+    margin-top: 40px;
+  }
+
   .form__list {
-    width: 500px;
+    width: 502px;
     margin: 0;
   }
 
   .form__list--color {
+    padding-top: 62px;
+    padding-bottom: 11px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .form__option {
-    margin-bottom: 44px;
-    padding-top: 16px;
     padding-left: 82px;
     .font(19px, 18px);
-
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
 
   .form__option--type {
-    margin-bottom: 39px;
+    &:first-child {
+      margin-top: 63px;
+      margin-bottom: 57px;
+    }
 
     &:last-child {
-      margin-bottom: 0;
+      margin-bottom: 71px;
     }
   }
 
   .form__option--color {
-    width: 200px;
+    margin-bottom: 59px;
+    width: 240px;
   }
 
   .form__input--radio + .form__label::before {
     top: -12px;
-    left: -85px;
+    left: -81px;
 
     width: 52px;
     height: 52px;
@@ -314,23 +313,23 @@
 
   .form__input--radio:checked + .form__label::after {
     top: 3px;
-    left: -70px;
+    left: -66px;
 
     width: 22px;
     height: 22px;
   }
 
   .form__input--checkbox + .form__label::before {
-    top: -12px;
-    left: -85px;
+    top: -10px;
+    left: -81px;
 
     width: 54px;
     height: 52px;
   }
 
   .form__input--checkbox:checked + .form__label::after {
-    top: 2px;
-    left: -73px;
+    top: 5px;
+    left: -69px;
 
     width: 33px;
   }
@@ -339,10 +338,28 @@
     width: 500px;
     flex-direction: row;
     align-items: center;
+    margin: 0;
+  }
 
-    &:first-of-type {
-      margin-top: 0;
+  .form__field--name {
+    margin-bottom: 24px;
+
+    &:first-child {
+      margin-top: 47px;
     }
+
+    &:last-child {
+      margin-bottom: 53px;
+    }
+  }
+
+  .form__field--phone {
+    margin-top: 48px;
+  }
+
+  .form__field--email {
+    margin-top: 24px;
+    margin-bottom: 50px;
   }
 
   .form__icon--phone {
@@ -354,18 +371,21 @@
   }
 
   .form__sign {
-    margin-right: 26px;
+    margin-right: 25px;
     .font(19px, 18px);
   }
 
   .form__text-input {
     width: 500px;
     padding-right: 76px;
+    padding-left: 17px;
     .font(19px, 18px);
   }
 
   .form__textarea {
     margin: 0;
+    margin-top: 50px;
+    margin-bottom: 53px;
     width: 500px;
     .font(19px, 18px);
   }
@@ -387,28 +407,77 @@
   .form__section {
     margin-bottom: 0;
     padding: 50px 0;
-    padding-left: 112px;
+    padding-left: 113px;
     padding-right: 225px;
   }
 
+  .form__section--color {
+    padding-bottom: 11px;
+  }
+
   .form__section--phone {
-    padding-bottom: 24px;
+    padding-bottom: 23px;
   }
 
   .form__section--email {
     padding-top: 0;
   }
 
+  .form__legend {
+    margin-top: 15px;
+  }
+
+  .form__legend--email {
+    margin-top: 18px;
+  }
+
   .form__list {
-    width: 730px;
+    width: 702px;
+  }
+
+  .form__list--color {
+    padding-top: 12px;
+    padding-bottom: 0;
+  }
+
+  .form__option--type {
+    &:first-child {
+      margin-top: 13px;
+    }
+
+    &:last-child {
+      margin-bottom: 19px;
+    }
   }
 
   .form__option--color {
-    width: 240px;
+    margin-bottom: 58px;
+    width: 176px;
   }
 
   .form__field {
     width: 700px;
+  }
+
+  .form__field--name {
+    margin-bottom: 23px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .form__field--phone {
+    margin-top: 2px;
+  }
+
+  .form__field--email {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .form__icon--phone {
@@ -425,6 +494,7 @@
   }
 
   .form__textarea {
+    margin: 0;
     width: 700px;
   }
 
