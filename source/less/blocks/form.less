@@ -134,6 +134,12 @@
   flex-direction: column;
 }
 
+.form__field--phone,
+.form__field--email {
+  margin-top: 7px;
+  margin-bottom: 32px;
+}
+
 .form__field--name {
   margin-bottom: 22px;
 
@@ -144,11 +150,6 @@
   &:last-of-type {
     margin-bottom: 31px;
   }
-}
-
-.form__field--contacts {
-  margin-top: 7px;
-  margin-bottom: 32px;
 }
 
 .form__icon {
@@ -250,6 +251,22 @@
   }
 
   .form__section--background {
+    position: relative;
+    background-color: #f1f1f1;
+  }
+
+  .form__section--background::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
     background-color: #f1f1f1;
   }
 
@@ -266,7 +283,7 @@
   }
 
   .form__legend--email {
-    margin-top: 40px;
+    margin-top: 41px;
   }
 
   .form__list {
@@ -415,20 +432,12 @@
     padding-bottom: 11px;
   }
 
-  .form__section--phone {
-    padding-bottom: 23px;
-  }
-
-  .form__section--email {
-    padding-top: 0;
-  }
-
   .form__legend {
     margin-top: 15px;
   }
 
   .form__legend--email {
-    margin-top: 18px;
+    margin-top: 44px;
   }
 
   .form__list {
@@ -472,11 +481,11 @@
   }
 
   .form__field--phone {
-    margin-top: 2px;
+    margin-top: 1px;
   }
 
   .form__field--email {
-    margin-top: 0;
+    margin-top: 24px;
     margin-bottom: 0;
   }
 

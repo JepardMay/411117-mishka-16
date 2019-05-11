@@ -1,11 +1,15 @@
 .page-footer {
-  position: relative;
-  margin: 0 auto;
-  padding: 25px 70px;
+  width: 100%;
   background-color: #f1f1f1;
 }
 
-.page-footer::after {
+.page-footer__wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 25px 70px;
+}
+
+.page-footer__wrapper::after {
   content: "";
   position: absolute;
   top: 80px;
@@ -24,49 +28,33 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-footer {
+  .page-footer__wrapper {
     width: @tablet-width;
     padding: 45px 50px;
-  }
-
-  .page-footer::before {
-    content: "";
-
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
-    background-color: #f1f1f1;
-  }
-
-  .page-footer::after {
-    display: none;
-  }
-
-  .page-footer__wrapper {
     display: flex;
     align-items: flex-end;
+  }
+
+  .page-footer__wrapper::after {
+    display: none;
   }
 
   .page-footer__logo {
     display: block;
     margin-right: 159px;
 
-    &:hover path {
+    &:hover .page-footer__icon,
+    &:focus .page-footer__icon {
       fill: #46c1ae;
     }
 
-    &:focus path {
+    &:active .page-footer__icon {
       fill: #46c1ae;
       fill-opacity: 0.3;
     }
   }
 
-  .page-footer__image {
+  .page-footer__icon {
     width: 102px;
     height: 34px;
   }
@@ -82,7 +70,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-footer {
+  .page-footer__wrapper {
     width: @desktop-width;
   }
 

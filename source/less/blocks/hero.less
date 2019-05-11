@@ -1,23 +1,23 @@
-.goods {
+.hero {
   margin: 0 auto;
 }
 
-.goods__list {
+.hero__list {
   .list-style();
   .font(19px, 24px);
 }
 
-.goods__item {
+.hero__item {
   .font-bold();
 }
 
-.goods__link {
+.hero__link {
   position: relative;
   display: block;
   padding: 25px 0;
   padding-right: 185px;
   padding-left: 29px;
-  min-height: 103px;
+  min-height: 102px;
 
   color: #ffffff;
   background-color: #63d1bb;
@@ -35,9 +35,19 @@
       color: rgba(255, 255, 255, 0.3);
     }
   }
+
+  &:hover .hero__icon,
+  &:focus .hero__icon {
+    fill-opacity: 0.7;
+  }
+
+  &:active .hero__icon {
+    fill: #149080;
+    fill-opacity: 0.3;
+  }
 }
 
-.goods__link--toys {
+.hero__link--toys {
   background-color: #56c3b2;
 
   &:hover {
@@ -49,57 +59,45 @@
   }
 }
 
-.goods__link svg {
+.hero__icon {
   position: absolute;
+  fill: #149080;
+  fill-opacity: 0.5;
 }
 
-.goods__link--interior svg {
+.hero__icon--interior {
   width: 40px;
   height: 62px;
   top: 23px;
   right: 36px;
 }
 
-.goods__link--toys svg {
+.hero__icon--toys {
   width: 60px;
   height: 60px;
   top: 21px;
   right: 27px;
 }
 
-.goods__link path {
-  fill: #149080;
-  fill-opacity: 0.5;
-}
-
-.goods__link:hover path {
-  fill-opacity: 0.7;
-}
-
-.goods__link:focus path {
-  fill: #149080;
-  fill-opacity: 0.3;
-}
-
 @media (min-width: @tablet-width) {
-  .goods {
-    margin-top: -124px;
+  .hero {
+    position: relative;
   }
 
-  .goods__list {
+  .hero__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-end;
     .font(20px, 30px);
   }
 
-  .goods__link {
+  .hero__link {
     flex: auto;
     width: 334px;
     min-height: 124px;
 
-    padding-top: 29px;
+    padding-top: 27px;
     padding-bottom: 34px;
     padding-left: 36px;
     transition: all 0.3s;
@@ -110,29 +108,28 @@
     }
   }
 
-  .goods__link--interior svg {
+  .hero__icon--interior {
     top: 30px;
   }
 
-  .goods__link--toys svg {
+  .hero__icon--toys {
     top: 31px;
     right: 34px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .goods {
+  .hero {
     width: @desktop-width;
-    margin-top: -122px;
     padding: 0 50px;
   }
 
-  .goods__link {
+  .hero__link {
     width: 525px;
     padding-right: 395px;
   }
 
-  .goods__link--toys svg {
+  .hero__icon--toys {
     top: 32px;
     right: 35px;
   }
