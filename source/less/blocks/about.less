@@ -25,49 +25,78 @@
   }
 }
 
-.about__item svg {
-  position: absolute;
+.about__item--flower {
+  padding-right: 65px;
 }
 
-.about__item path {
+.about__item--money {
+  padding-right: 55px;
+}
+
+.about__item--heart {
+  padding-right: 65px;
+}
+
+.about__item--ball {
+  padding-right: 50px;
+}
+
+.about__item--gift {
+  padding-right: 50px;
+}
+
+.about__icon {
+  position: absolute;
   fill: #63d1bb;
 }
 
-.about__item--flower svg {
+.about__icon--flower {
   top: -54px;
   left: 10px;
+  width: 32px;
+  height: 37px;
 }
 
-.about__item--money svg {
+.about__icon--money {
   top: -53px;
   left: 2px;
+  width: 47px;
+  height: 27px;
 }
 
-.about__item--like svg {
+.about__icon--heart {
   top: -48px;
   left: 9px;
+  width: 34px;
+  height: 27px;
 }
 
-.about__item--clew svg {
+.about__icon--ball {
   top: -51px;
   left: 5px;
+  width: 35px;
+  height: 34px;
 }
 
-.about__item--rocket svg {
+.about__icon--rocket {
   top: -50px;
   left: -3px;
+  width: 55px;
+  height: 23px;
 }
 
-.about__item--gift svg {
+.about__icon--gift {
   top: -52px;
   left: 5px;
+  width: 33px;
+  height: 32px;
 }
 
 @media (min-width: @tablet-width) {
   .about {
     width: @tablet-width;
     padding: 50px 48px;
-    padding-bottom: 89px;
+    padding-bottom: 81px;
   }
 
   .about__title {
@@ -95,13 +124,19 @@
 
   .about__item--flower {
     order: -2;
+    padding-right: 105px;
   }
 
   .about__item--money {
     order: -1;
+    padding-right: 80px;
   }
 
-  .about__item--clew {
+  .about__item--heart {
+    padding-right: 100px;
+  }
+
+  .about__item--ball {
     order: -2;
   }
 
@@ -128,5 +163,25 @@
     &:nth-child(4) {
       margin-top: 102px;
     }
+  }
+
+  .about__item--flower {
+    padding-right: 125px;
+  }
+
+  .about__item--money {
+    padding-right: 95px;
+  }
+
+  .about__item--heart {
+    padding-right: 120px;
+  }
+
+  .about__item--ball {
+    padding-right: 55px;
+  }
+
+  .about__item--gift {
+    padding-right: 65px;
   }
 }
