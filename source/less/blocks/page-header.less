@@ -1,13 +1,5 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
   margin: 0 auto;
-}
-
-.page-header__logo {
-  align-self: center;
-  padding: 22px 51px;
-  height: 79px;
 }
 
 @media (min-width: @tablet-width) {
@@ -17,24 +9,10 @@
     position: relative;
     width: @tablet-width;
   }
-
-  .page-header__logo {
-    padding: 0;
-    position: absolute;
-    top: 22px;
-    left: 49px;
-    z-index: 5;
-    height: 88px;
-  }
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
     width: @desktop-width;
-  }
-
-  .page-header__logo {
-    top: 9px;
-    left: 500px;
   }
 }
