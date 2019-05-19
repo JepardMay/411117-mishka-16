@@ -89,10 +89,5 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series(
-  "clean",
-  "copy",
-  "css",
-  "sprite"
-));
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite"));
 gulp.task("start", gulp.series("build", "server"));
