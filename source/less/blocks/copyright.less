@@ -4,7 +4,6 @@
 }
 
 .copyright__text {
-  margin-top: 5px;
   margin-right: 30px;
   .font-bold();
   .font(19px, 18px);
@@ -24,15 +23,17 @@
 }
 
 .copyright__logo {
+  width: 27px;
+  height: 37px;
   fill: #63d1bb;
 }
 
 @media (min-width: @tablet-width) {
-  .copyright {
-    margin-top: 8px;
+  .copyright__text {
+    .font(19px, 28px);
   }
 
-  .copyright__text {
-    margin-top: 10px;
+  .copyright__link {
+    display: flex;
   }
 }

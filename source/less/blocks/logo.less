@@ -1,4 +1,10 @@
 .logo {
+  display: block;
+  margin: 0 auto;
+  padding: 22px 0;
+  width: 88px;
+  height: 79px;
+
   &:hover {
     opacity: 0.6;
   }
@@ -14,6 +20,12 @@
 }
 
 @media (min-width: @tablet-width) {
+  .logo {
+    margin-left: 48px;
+    width: 114px;
+    height: 88px;
+  }
+
   .logo__image {
     width: 112px;
     height: 46px;
@@ -21,6 +33,14 @@
 }
 
 @media (min-width: @desktop-width) {
+  .logo {
+    margin-left: 41px;
+    padding: 0;
+    padding-top: 9px;
+    width: 151px;
+    order: 1;
+  }
+
   .logo__image {
     width: 149px;
     height: 72px;
