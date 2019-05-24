@@ -1,12 +1,22 @@
 .modal-cart-adding {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 50;
+
   display: none;
+
   flex-direction: column;
   align-items: center;
   width: 320px;
+  min-height: 336px;
   margin: 0 auto;
+  margin-top: -168px;
+  margin-left: -160px;
   padding: 0 30px;
   padding-top: 36px;
   padding-bottom: 46px;
+  background-color: #ffffff;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
 }
 
@@ -91,15 +101,17 @@
   cursor: pointer;
 }
 
-.modal-cart-adding--open {
+.modal-cart-adding--show {
   display: flex;
 }
 
 @media (min-width: @tablet-width) {
   .modal-cart-adding {
     width: 566px;
+    margin-left: -283px;
     padding: 0 106px;
     padding-top: 51px;
+    padding-bottom: 46px;
   }
 
   .modal-cart-adding__title {
