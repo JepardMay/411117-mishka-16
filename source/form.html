@@ -6,6 +6,8 @@
   <title>HTML Academy: Мишка</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link href="css/style.min.css" rel="stylesheet">
   <script>
     // Picture element HTML5 shiv
@@ -35,7 +37,7 @@
               alt="Магазин предметов ручной работы «Мишка»">
           </picture>
         </a>
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list main-nav__menu">
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Каталог товаров</a>
           </li>
@@ -43,7 +45,7 @@
             <a class="site-list__link">Вязание на заказ</a>
           </li>
         </ul>
-        <ul class="main-nav__list user-list">
+        <ul class="main-nav__list user-list main-nav__menu">
           <li class="user-list__item">
             <a class="user-list__link user-list__link--search" href="search.html">
               <svg class="user-list__icon user-list__icon--search" width="17.6" height="17.6">
@@ -241,6 +243,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
