@@ -39,7 +39,7 @@
 }
 
 .product-of-the-week__list {
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   width: 100%;
   .font(15px, 20px);
   color: @main-text-color;
@@ -47,7 +47,7 @@
 }
 
 .product-of-the-week__row {
-  height: 39px;
+  height: 40px;
   border-bottom: solid 1px #f2f2f2;
 }
 
@@ -55,8 +55,13 @@
   width: 95px;
 }
 
-.product-of-the-week__image {
+.product-of-the-week__picture {
+  margin: 0;
   margin-bottom: 15px;
+}
+
+.product-of-the-week__image {
+  display: block;
   width: 260px;
 }
 
@@ -74,7 +79,10 @@
   .product-of-the-week {
     width: @tablet-width;
     padding: 45px 48px;
-    padding-bottom: 68px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .product-of-the-week::after {
@@ -101,38 +109,57 @@
     .font(17px, 17px);
   }
 
+  .product-of-the-week__info-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 668px;
+  }
+
   .product-of-the-week__info {
     display: flex;
     flex-direction: column;
-    width: 292px;
+    width: 293px;
   }
 
   .product-of-the-week__description {
-    width: 282px;
     margin: 0;
     margin-bottom: 36px;
     .font(17px, 30px);
   }
 
   .product-of-the-week__list {
-    margin-bottom: 58px;
+    margin-bottom: 174px;
   }
 
   .product-of-the-week__value {
     width: 98px;
   }
 
+  .product-of-the-week__picture {
+    margin: 0;
+    margin-top: 8px;
+  }
+
   .product-of-the-week__image {
-    position: absolute;
-    top: 152px;
-    right: 51px;
     width: 333px;
     order: 3;
   }
 
+  .product-of-the-week__buying {
+    margin-top: -119px;
+  }
+
   .product-of-the-week__price {
+    width: 293px;
     margin-bottom: 34px;
     .font(20px, 24px);
+  }
+
+  .product-of-the-week__button {
+    width: 293px;
   }
 }
 
@@ -157,6 +184,7 @@
     z-index: 2;
     order: 2;
     width: auto;
+    max-width: 530px;
     margin-bottom: 50px;
     .title-desktop();
   }
@@ -167,21 +195,32 @@
     margin-right: 53px;
   }
 
+  .product-of-the-week__info-wrapper {
+    width: 1051px;
+  }
+
   .product-of-the-week__info {
     margin-left: 176px;
   }
 
   .product-of-the-week__description {
-    margin-bottom: 49px;
+    margin-bottom: 47px;
   }
 
   .product-of-the-week__list {
-    margin-bottom: 111px;
+    margin-bottom: 218px;
+  }
+
+  .product-of-the-week__picture {
+    margin-top: -160px;
   }
 
   .product-of-the-week__image {
-    top: 72px;
-    right: 0;
     width: 525px;
+  }
+
+  .product-of-the-week__buying {
+    margin-top: -109px;
+    margin-left: 176px;
   }
 }

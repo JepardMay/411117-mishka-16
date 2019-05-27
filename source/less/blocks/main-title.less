@@ -65,8 +65,8 @@
 
   .main-title__title {
     padding: 0 124px;
-    padding-top: 95px;
-    padding-bottom: 79px;
+    padding-top: 94px;
+    padding-bottom: 80px;
     width: @tablet-width;
     .title-tablet();
   }
@@ -95,6 +95,10 @@
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
     }
+  }
+
+  .main-title--index::after {
+    background-size: 1250px;
   }
 
   .main-title__title {

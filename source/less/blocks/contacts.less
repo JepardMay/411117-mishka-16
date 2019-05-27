@@ -148,6 +148,7 @@
 
   .contacts__content {
     margin: 0;
+    max-width: 54px;
 
     &:first-child {
       margin-right: 24px;
@@ -156,6 +157,7 @@
 
   .contacts__content--address {
     width: 224px;
+    max-width: 100%;
   }
 
   .contacts__map {
@@ -179,8 +181,8 @@
 
 @media (min-width: @desktop-width) {
   .contacts {
-    position: relative;
     width: 1048px;
+    min-height: 457px;
     padding: 70px 0;
     padding-left: 172px;
     padding-bottom: 105px;
@@ -193,8 +195,9 @@
 
   .contacts__title {
     margin: 0;
-    margin-top: 70px;
+    margin-top: -387px;
     margin-bottom: 49px;
+    width: 350px;
     .title-desktop();
   }
 
@@ -215,11 +218,10 @@
   }
 
   .contacts__map {
-    position: absolute;
-    top: 70px;
-    right: 0;
+    order: -1;
     width: 525px;
     margin: 0;
+    margin-left: auto;
   }
 
   .contacts__picture::after {

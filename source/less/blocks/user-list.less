@@ -74,6 +74,7 @@
   }
 
   .user-list__link {
+    max-width: 316px;
     padding-top: 31px;
     padding-right: 50px;
     padding-bottom: 34px;
@@ -85,6 +86,7 @@
   }
 
   .user-list__link--search {
+    max-width: 83px;
     padding-top: 37px;
     padding-right: 32px;
     box-shadow: inset 1px 0 0 0 #ececec,
@@ -115,6 +117,10 @@
 @media (min-width: @desktop-width) {
   .user-list {
     order: 2;
+  }
+
+  .user-list__link {
+    max-width: 318px;
   }
 
   .user-list__link--cart {
